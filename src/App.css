@@ -1,3 +1,115 @@
-.inc-exp-container{
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url("/image3.jpg");
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.header {
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.balance {
+}
+
+.balance h4 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(201, 29, 29);
+  padding: 10px 0;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inc-exp-container h4 {
+  font-size: 40px;
+  color: rgb(27, 187, 112);
+}
+
+.inc-exp-container p {
+  font-size: 30px;
+  color: rgb(13, 156, 154);
+}
+
+.inc-exp {
+  border: 5px solid rgb(225, 14, 14);
+  padding: 10px;
+  background-color: rgb(236, 225, 19);
+}
+
+.history {
+  padding: 20px 0;
+}
+
+.history ul li {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.list-item {
+  gap: 20px;
+}
+
+.history ul li button {
+  color: white;
+  background-color: rgb(225, 14, 14);
+  padding: 5px 10px;
+  border: none;
+}
+
+.form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.transaction-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.form-div label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(113, 4, 95, 0.85);
+}
+
+.form-div input {
+  padding: 5px;
+  font-size: 20px;
+  border: 5px solid rgb(225, 14, 14);
+}
+
+form button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgb(54, 2, 2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }

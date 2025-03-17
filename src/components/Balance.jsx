@@ -10,9 +10,9 @@ const Balance = ({Balance}) => {
 
 
   return (
-    <div>
+    <div className='balance'>
         <h4>
-            your balance
+            Your balance
         </h4>
         <h1>
             {balance}

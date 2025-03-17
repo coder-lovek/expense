@@ -37,7 +37,7 @@ function App() {
   }
 
   return (
-    <div> 
+    <div > 
       <Header />
       <Balance Balance={balance}/>
       <IncomeExpense transactions={transactions} incomeExpense={incomeExpense}/>
