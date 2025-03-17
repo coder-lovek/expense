@@ -1,13 +1,21 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
-const Balance = () => {
+const Balance = ({Balance}) => {
+  const [balance,setBalance]=useState(0)
+
+  useEffect(()=>{
+    setBalance(Balance)
+
+  })
+
+
   return (
     <div>
         <h4>
             your balance
         </h4>
         <h1>
-            0 Rs
+            {balance}
         </h1>
 
     </div>

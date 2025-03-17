@@ -1,6 +1,12 @@
 import React,{useState,useEffect} from "react";
 
-const TransactionList = ({transactions}) => {
+const TransactionList = ({transactions,setTransactions}) => {
+
+  const handleDelete=(id)=>{
+    const updatedTransactions=transactions.filter((t)=>t.id!==id);
+    setTransactions(updatedTransactions)
+    localStorage.setItem("transactions",JSON.stringify(updatedTransactions))
+  }
 
 
   return (
@@ -10,8 +16,12 @@ const TransactionList = ({transactions}) => {
         {transactions.map((t) => (
           <li key={t.id}>
             {t.text} <span>{t.amount}</span>
+
+            <button onClick={()=>handleDelete(t.id)}>del</button>
           </li>
+          
         ))}
+        
       </ul>
     </div>
   );
