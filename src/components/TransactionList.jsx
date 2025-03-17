@@ -1,13 +1,7 @@
 import React,{useState,useEffect} from "react";
 
-const TransactionList = () => {
-  const [transactions, setTransactions] = useState([]);
+const TransactionList = ({transactions}) => {
 
-  useEffect(() => {
-    const storedTransaction =
-      JSON.parse(localStorage.getItem("transactions")) || [];
-    setTransactions(storedTransaction);
-  }, []);
 
   return (
     <div>

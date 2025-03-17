@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 
-const AddTransaction = () => {
+const AddTransaction = ({addTransaction}) => {
     const [text,setText]=useState('')
     const [amount,setAmount]=useState(0)
 
@@ -11,13 +11,11 @@ const AddTransaction = () => {
             text:text,
             amount:+amount
         }
-        const transactions = JSON.parse(localStorage.getItem("transactions")) || [];
-        transactions.push(newTransaction);
-        localStorage.setItem("transactions", JSON.stringify(transactions));
+        addTransaction(newTransaction)
         setText('')
         setAmount(0)
-
     }
+
   return (
     <div>
         <form onSubmit={handleSubmit}>
